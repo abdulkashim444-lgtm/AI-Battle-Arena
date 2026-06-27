@@ -1,0 +1,6 @@
+{
+  "name": "Neural Arena",
+  "description": "An advanced cybernetic AI Battle Arena and Research Dashboard. Trains autonomous combat agents using Reinforcement Learning and Genetic Algorithms with live Gemini commentary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

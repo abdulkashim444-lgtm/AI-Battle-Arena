@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-bg: #050508;
+  --color-cyber-text: #e0e0ff;
+  --color-cyber-cyan: #00f2ff;
+  --color-cyber-purple: #7000ff;
+  --color-cyber-dark: #0a0a15;
+  --color-cyber-panel: #08080c;
+  --color-cyber-grid: #1a1a2e;
+}
+
+@layer utilities {
+  /* Dynamic custom selection */
+  ::selection {
+    background-color: #00f2ff !important;
+    color: #000000 !important;
+  }
+
+  /* Clip-path for a sharp angled cyberpunk aesthetic */
+  .clip-corner {
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
+  }
+
+  .clip-header {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%);
+  }
+
+  /* Tech Grid Dot Background */
+  .bg-tech-grid {
+    background-image: radial-gradient(#00f2ff 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Cyber Scanlines background gradient */
+  .bg-cyber-grid-lines {
+    background-image: 
+      linear-gradient(rgba(0, 242, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 242, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Custom high-performance neon glows */
+  .glow-cyan {
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.25);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 15px rgba(112, 0, 255, 0.25);
+  }
+
+  /* Sleek custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #08080c;
+    border-left: 1px solid #1f2937;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 242, 255, 0.3);
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #00f2ff;
+  }
+}
+
+/* Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
+}
