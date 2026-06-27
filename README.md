@@ -7,6 +7,7 @@ Neural Arena is a next-generation AI battle simulator where intelligent autonomo
 Designed as an experimental AI research playground, Neural Arena combines real-time visualization, autonomous agent behavior, strategic reasoning, and interactive dashboards into a single immersive experience.
 
 ---
+<img width="1917" height="913" alt="Image" src="https://github.com/user-attachments/assets/0cd79266-55f2-42e4-bfcc-e962ea0da93f" />
 
 ## ✨ Features
 
